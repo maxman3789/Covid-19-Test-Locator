@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAJz5vAJPY2AAzPWMATKaxAE+IjgC6s94AO05XAJfl7QA3PIQAEiwyAEV1cQAqPkMANjQ3AF6orgB6gKsALEFDACtndQAZODsAYWF9ABkpVgCHvMUAHl1hAECvuwBFMkwAn8niABAiJwA0NnwANSI4AEqOmABjyM8ARXN1AGtrkgAnZnMAdHN9AFF6gQBcc3UAMC+MALC24ABEaWoAO5afAB40XQA3PH0AlsHDAElucABJOWIAl4m+AD48hgBmp60AkMjqAHp2fgAWOUAAQTNIAGqlywA8RUgATYiIAFemqwBSg4sAQkhRAB9HRgBgeosAFC4yABgXUAAUMDgAQqGvAE9MVAC1qdYAJCFKABg5QQB2pqsAVE1pADRykAAoOkQAhHmaAD16hABTYnsAZGmqADIpYgBiq7IAk8HpAEyfoQAlG0IApvHxAB0adQATSUUAREBEAFBtpQARSEsAa7q7AFikpwBpsc0AGiB+AFJGiwAsI1oAg8/VAAcKGgBPZHkAOX+CACdpbgA6MjYARUJ3AE1TYgBfk5kAcW6xACo0NABOdaMAXY3GABxKQAAuW2AAJB55AC87QABbWHEAWICgAKuk0wBCSG8AQlhXAGCutAB3w8UALkhMAIzZ4gBelpoAdc7UAGt/pgCH4vQAr+rwAEc6RgA6bnUARzZMAFxepwAGGFcAMDMyAC5UZwAqNz4ARpeeAJjf/QARU2UAJC50ACZKSgAxL24AIi8wACcaSwAjMjkAK1NcACZaXwBBQqYAPjdrAGKWrQApIGYAf7OyABpPUQAkPlQAKSZvAE6SmQA0hIsAInN0AFNscAAJO0MARzx6AFZSlwBna6sAZaywAA0kagAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghBiPQA3AAAAAAAAAABjAh1onHk/EpUAAAAAAAAjiw2FRX+DfSx1BaAAAAAAGigHNFocF19wMkhXAAAAlG5zkpZGQ09RExl2mhEAABaYQRhAgYxJPjFpLScfAAAAXpuIXZORexRNZCl0DAAADmYiCQNbQqFxkAYbjh58AAgwbyqHJS5TimqGXGtVAABZBIl6nZ9yRy9nIEt3YQAAAACZZWBWlzVtASY2OwAAAABYTitUD4BMnjwLRFAAAAAAAABKOTgzeCSNbACEAAAAAAAAjwAACn4hUhUAAAAAAAAAAAAAAAA6AAAAAAAAAP//AAD4XwAA4A8AAMADAADAAwAAgAEAAIABAADAAQAAgAAAAIABAACAAQAA4AMAAMADAADwCwAA9g8AAP9/AAA=" rel="icon" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <title>Covid-19 Test Locator</title>
+</head>
+
+<body>
+    <header class="w3-container w3-dark-grey">
+        <h1>COVID-19 Test Locator</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://www.vaccines.gov" target="_blank">Find A Vaccine</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <figure class="jumbo w3-animate-left">
+        
+            <div class="jumbowords ">
+                <p><strong>NOTICE:</strong> <br>If you have tested positive for COVID-19,
+                    please isolate yourself from human contact for <strong>5 days</strong>
+                    and then take another test. <a href="https://www.vaccines.gov" target="_blank">Vaccines</a> to protect yourself are
+                    available.
+                    Please also consider Booster Vaccines. Always brings a Face Covering.</p>
+            </div>
+
+    </figure>
+    <main class="w3-container w3-light-grey">
+        <section class="w3-row">
+            <div class="w3-third w3-bar-block w3-collapse w3-mobile" id="mySidebar">
+                <div class="newsbox w3-padding w3-round-xlarge w3-white">
+                    <div>
+                        <h2>Recent News on COVID-19</h2>
+                    </div>
+                    <!-- graph with data values from pulled API if possible -->
+                    
+                </div>
+                <br>
+
+                <div class="videobox w3-padding w3-round-xlarge w3-white">
+                    <h2>Self-Testing Instructions <a
+                            href="https://www.sandiegocounty.gov/content/sdc/hhsa/programs/phs/community_epidemiology/dc/2019-nCoV/testing.html"
+                            target="_blank"><img width="10%" height="10%"
+                                src="https://www.sandiegocounty.gov/content/dam/sdc/initialcontent/logo/cosd-seal-sm.png"
+                                alt="san diego county covid-19 test"></a></h2>
+
+                    <p><iframe src="https://www.youtube.com/embed/Xli2t4skfx0" width="100%" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></p>
+                </div>
+                <br>
+                <div class="graph w3-padding w3-round-xlarge w3-white">
+                    <iframe src="https://public.domo.com/cards/azrGr" width="100%" height="500" marginheight="0"
+                        marginwidth="0" frameborder="0"></iframe>
+                </div>
+
+            </div>
+            <div class="search w3-twothird w3-white w3-padding w3-card-2 w3-round-xlarge w3-mobile">
+                <div>
+                    <h2 for="testing">Find a COVID-19 Testing Site</h2>
+                    <select name="cities" id="testing-sites">
+                        <option value="">Select City</option>
+                        <option value="San Diego">San Diego</option>
+                        <option value="Sacramento">Sacramento</option>
+                        <option value="San Francisco">San Francisco</option>
+                        <option value="San Jose">San Jose</option>
+                    </select>
+ 
+                </div>
+
+                <!-- links will reflect testing site names
+                 href will populate addresses in the div container below -->
+                 <div class="w3-bar-block" id="results-container">
+                    <h2>Testing Facilities</h2>
+                </div>
+
+
+                <div id="contact-info">
+                    <h2 id="site-name"></h2>
+                    <p id="address"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container" >
+        
+        <div class="w3-third w3-mobile footer-third">
+            <p style="font-size: x-large;"><strong>Helpful Links</strong></p>
+            <ul style="font-size: large;">
+                <li><a href="https://www.sandiegocounty.gov/content/sdc/hhsa/programs/phs/community_epidemiology/dc/2019-nCoV/testing.html" target="_blank">San Diego County - Testing</a></li>
+                <li><a href="https://www.cdc.gov" target="_blank">CDC</a></li>
+                <li><a href="https://www.fda.gov/emergency-preparedness-and-response/coronavirus-disease-2019-covid-19/covid-19-vaccines" target="_blank">FDA - Vaccines</a></li>
+                <li><a href="https://www.vaccines.gov" target="_blank">Vaccine Finder</a>
+                <li><a href="https://www.sandiegocounty.gov/content/sdc/hhsa/programs/phs/community_epidemiology/dc/2019-nCoV/Treatment.html" target="_blank">Treatments</a></li>
+            </ul>
+        </div>
+        <div class="w3-third w3-mobile footer-third" id="contact">
+            <p style="font-size: x-large;"><strong>Contact Us</strong></p>
+             <p style="font-size: large;">Send us an <a href="sendmaxstuff@gmail.com">E-Mail</a> if you have any feedback.</p>
+        </div>
+        <div class="w3-third w3-mobile footer-third">
+            <p style="text-align: center;"><img src="Yin_yang.png" width="40%" /> <strong><i>LLC</i></strong></p>
+        </div>
+    </footer>
+    <script src="news.js"></script>
+    <script src="location.js"></script>
+    <script src="cases.js"></script>
+</body>
+
+</html>
