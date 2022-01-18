@@ -23,7 +23,7 @@ Dekstop Testing <br>
  <br>
 
 ## Mobile Functionality
-<img src="https://github.com/MaestroLuu/Covid19-Testing-Site-Locator/blob/main/assets/images/demo.gif" />
+<img src="https://github.com/MaestroLuu/Covid19-Testing-Site-Locator/blob/main/assets/images/demo.gif" width="320" />
 
 ## Getting Started
 
