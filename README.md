@@ -5,7 +5,7 @@ A collaboration with 3 other Full Stack Students to make a Website to locate a C
 
 A web application that allows users to search for COVID-19 testing facilities within a selected city from a dropdown list. As users select their test sites, additional information regarding specific address will display. Additional links regarding finding COVID vaccination sites, trending news articles from NY times, and graph data of recent cases will be displayed on the application as well.
 
-## [Try it yourself!](https://maestroluu.github.io/Covid19-Testing-Site-Locator/)
+## [Try it yourself!](https://maxman3789.github.io/Covid-19-Test-Locator/)
 
 The following images show a glimpse of the application:
 ![demoPic](https://user-images.githubusercontent.com/96030343/150022024-58560706-7ff6-4e61-9ae9-e73a3fd384c6.png)
